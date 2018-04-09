@@ -4,7 +4,7 @@ import re
 from share import logfile
 import os
 
-jiemi_msg='''{"msg_type":{"someone_login":"login"},"from_role":"coordin_zigbee"}fffgddd'''
+jiemi_msg='''{"msg_type":{"someone_login":"login"},"from_role":"coordin_zigbee"}'''
 jiemi_msg=re.findall(r"{(.*)}",jiemi_msg)
 for l in jiemi_msg:
     jiemi_msg='{'+l+'}'
@@ -66,19 +66,19 @@ while True:
 # from email.mime.text import MIMEText
 # from email.header import Header
 #
-# fromaddr = "13592895405@163.com"
-# toaddrs  = "1029568690@qq.com"
+# fromaddr = "xxx@163.com"
+# toaddrs  = "xxx@qq.com"
 #
 # subject="python email test"
 # smtpserver='smtp.163.com'
 #
-# username='13592895405@163.com'
-# password='mztkzpljrqyviuhm'
+# username='xxx@163.com'
+# password='xxx'
 #
 # msg=MIMEText("你好",'plain','utf-8')#中文需参数‘utf-8’，单字节字符不需要
 # msg['Subject']=Header(subject,'utf-8')
-# msg['From']='fankui<13592895405@163.com>'
-# msg['To']='1029568690@qq.com'
+# msg['From']='fankui<xxx@163.com>'
+# msg['To']='xxx@qq.com'
 #
 # smtp=smtplib.SMTP()
 # smtp.connect(smtpserver)
