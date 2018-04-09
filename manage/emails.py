@@ -9,12 +9,12 @@ import os
 import sys
 
 def send_email(msg_text,attachment_flag):
-    fromaddr = "13592895405@163.com"
-    toaddrs  = "1029568690@qq.com"
+    fromaddr = "xxx@163.com"
+    toaddrs  = "xxx@qq.com"
     subject="SmartHome App问题反馈"
     smtpserver='smtp.163.com'
-    username='13592895405@163.com'
-    password='mztkzpljrqyviuhm'
+    username='xxx@163.com'
+    password='xxx'
 
     # 构造MIMEMultipart对象做为根容器
     msg =MIMEMultipart.MIMEMultipart()
@@ -52,8 +52,8 @@ def send_email(msg_text,attachment_flag):
 
     # 设置根容器属性
     msg['Subject']=Header(subject,'utf-8')
-    msg['From']='用户<13592895405@163.com>'
-    msg['To']='1029568690@qq.com'
+    msg['From']='用户<xxx@163.com>'
+    msg['To']='xxx@qq.com'
     msg['Date'] = email.Utils.formatdate()
 
     # 用smtp发送邮件
