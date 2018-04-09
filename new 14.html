@@ -1,0 +1,715 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="pragma" content="no-cache">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <link href='http://webs.atsmartlife.com/smarthome/application/views/plugin/app/css/index.css' rel="stylesheet" type="text/css">
+        <link type="text/css" rel="stylesheet" href='http://webs.atsmartlife.com/smarthome/application/views/plugin/app/css/style.css'>
+        <link type="text/css" rel="stylesheet" href='http://webs.atsmartlife.com/smarthome/application/views/plugin/app/css/swiper.min.css'>
+        <link type="text/css" rel="stylesheet" href='http://webs.atsmartlife.com/smarthome/application/views/plugin/app/css/animate.css'>
+        <script type="text/javascript" src='http://webs.atsmartlife.com/smarthome/application/views/plugin/app/js/jquery.min.js'>
+</script>
+        <script type="text/javascript" src='http://webs.atsmartlife.com/smarthome/application/views/plugin/app/js/utils.js'>
+</script>
+        <title></title>
+    </head>
+    <body name='13592895405' devicetype='gateway'>
+        <span id="test" text="FN5oSwJhcUC9JyiBhaqDM6_BqqofTl6jPjogEXIWg8Og_A" debug="atsmartlife12345" first="1" style="display:none"></span>
+        <div class="top2">
+            <div class="top2_main">
+                <span class="top_icon_l"><img src='http://webs.atsmartlife.com/smarthome/application/views/plugin/app/images/top_icon_l.png'></span><em>在家</em><img src='http://webs.atsmartlife.com/smarthome/application/views/plugin/app/images/top_icon.png'>
+                <div class="top_drop">
+                    <ul>
+                        <li>
+                            <a href="#">在家</a>
+                        </li>
+                        <li>
+                            <a href="#">外出</a>
+                        </li>
+                        <li>
+                            <a href="#">就寝</a>
+                        </li>
+                        <li>
+                            <a href="#" class="bounceInUp disarm">撤防</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="he50"></div>
+        <div class="main">
+            <div class="scene_box">
+                <div class="swiper-container" id='swiper_ss'>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="a-img2" mode='home' name='回家'>
+                                <img src='http://webs.atsmartlife.com/smarthome/application/views/plugin/app/images/image_backhome.png'>
+                                <div class="a_itm_text2">
+                                    回家
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="a-img2" mode='out' name='离家'>
+                                <img src='http://webs.atsmartlife.com/smarthome/application/views/plugin/app/images/image_leavehome.png'>
+                                <div class="a_itm_text2">
+                                    离家
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="a-img2" mode='' name='会客'>
+                                <img src='http://webs.atsmartlife.com/smarthome/application/views/plugin/app/images/image_receiveguest.png'>
+                                <div class="a_itm_text2">
+                                    会客
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="a-img2" mode='' name='用餐'>
+                                <img src='http://webs.atsmartlife.com/smarthome/application/views/plugin/app/images/image_repast.png'>
+                                <div class="a_itm_text2">
+                                    用餐
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="a-img2" mode='sleep' name='就寝'>
+                                <img src='http://webs.atsmartlife.com/smarthome/application/views/plugin/app/images/image_sleep.png'>
+                                <div class="a_itm_text2">
+                                    就寝
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="a-img2" mode='' name='影院'>
+                                <img src='http://webs.atsmartlife.com/smarthome/application/views/plugin/app/images/image_cinema.png'>
+                                <div class="a_itm_text2">
+                                    影院
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="a-img2" mode='' name='阅读'>
+                                <img src='http://webs.atsmartlife.com/smarthome/application/views/plugin/app/images/image_study.png'>
+                                <div class="a_itm_text2">
+                                    阅读
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="a-img2" mode='home' name='a'>
+                                <img src='http://webs.atsmartlife.com/smarthome/application/views/plugin/app/images/image_recreation.png'>
+                                <div class="a_itm_text2">
+                                    a
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="a-img2" mode='out' name='1'>
+                                <img src='http://webs.atsmartlife.com/smarthome/application/views/plugin/app/images/scene_default.png'>
+                                <div class="a_itm_text2">
+                                    1
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-nav swiper-container swiper-free-mode" id='swiper_menu'>
+                <!--顶部导航-->
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide swiper-slide-visible active" id="all_click">
+                        全部
+                    </div>
+                    <div class="swiper-slide swiper-slide-visible">
+                        厨房
+                    </div>
+                    <div class="swiper-slide swiper-slide-visible">
+                        书房
+                    </div>
+                    <div class="swiper-slide swiper-slide-visible">
+                        客厅
+                    </div>
+                    <div class="swiper-slide swiper-slide-visible">
+                        餐厅
+                    </div>
+                    <div class="swiper-slide swiper-slide-visible">
+                        主卧
+                    </div>
+                    <div class="swiper-slide swiper-slide-visible">
+                        儿童房
+                    </div>
+                    <div class="swiper-slide swiper-slide-visible">
+                        洗手间
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pages swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide active swiper-slide-visible swiper-slide-active">
+                        <div class="page-inner">
+                            <div class="tabs_box">
+                                <div class="scene_main">
+                                    <div class="scene_item_nav">
+                                        <a href="javascript:;">灯 (3)</a>
+                                    </div>
+                                    <div class="hide_list">
+                                        <div class="scene_item" deviceid='客厅,开关2'>
+                                            <div class="scene_item_l">
+                                                <img src='http://webs.atsmartlife.com/smarthome/application/views/plugin/app/images/image_light.png'>
+                                            </div>
+                                            <div class="scene_item_r">
+                                                <div class="scene_item_r_t">
+                                                    <p class="scene_title" roomname='客厅' tousername='cn_gdsz_aitezhinengauto_s1a1b1u1f17r39n1_g'>
+                                                        开关2
+                                                    </p>
+                                                    <p class="gray light_state">
+                                                        已关闭
+                                                    </p>
+                                                </div>
+                                                <div class="scene_item_r_b">
+                                                    <div class="kai_box light_control">
+                                                        <a href="javascript:;" class="switch_off"></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="clear"></div>
+                                        </div>
+                                        <div class="scene_item" deviceid='客厅,开关'>
+                                            <div class="scene_item_l">
+                                                <img src='http://webs.atsmartlife.com/smarthome/application/views/plugin/app/images/image_light.png'>
+                                            </div>
+                                            <div class="scene_item_r">
+                                                <div class="scene_item_r_t">
+                                                    <p class="scene_title" roomname='客厅' tousername='cn_gdsz_aitezhinengauto_s1a1b1u1f17r39n1_g'>
+                                                        开关
+                                                    </p>
+                                                    <p class="gray light_state">
+                                                        已开启
+                                                    </p>
+                                                </div>
+                                                <div class="scene_item_r_b">
+                                                    <div class="kai_box light_control">
+                                                        <a href="javascript:;" class="switch_on"></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="clear"></div>
+                                        </div>
+                                        <div class="scene_item" deviceid='客厅,开关1'>
+                                            <div class="scene_item_l">
+                                                <img src='http://webs.atsmartlife.com/smarthome/application/views/plugin/app/images/image_light.png'>
+                                            </div>
+                                            <div class="scene_item_r">
+                                                <div class="scene_item_r_t">
+                                                    <p class="scene_title" roomname='客厅' tousername='cn_gdsz_aitezhinengauto_s1a1b1u1f17r39n1_g'>
+                                                        开关1
+                                                    </p>
+                                                    <p class="gray light_state">
+                                                        已关闭
+                                                    </p>
+                                                </div>
+                                                <div class="scene_item_r_b">
+                                                    <div class="kai_box light_control">
+                                                        <a href="javascript:;" class="switch_off"></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="clear"></div>
+                                        </div>
+                                    </div>
+                                    <div class="clear"></div>
+                                    <div class="scene_item_nav">
+                                        <a href="javascript:;">窗帘 (1)</a>
+                                    </div>
+                                    <div class="hide_list">
+                                        <div class="scene_item" deviceid='客厅,窗帘'>
+                                            <div class="scene_item_l">
+                                                <img src='http://webs.atsmartlife.com/smarthome/application/views/plugin/app/images/image_curtain.png'>
+                                            </div>
+                                            <div class="scene_item_r">
+                                                <div class="scene_item_r_t">
+                                                    <a href="javascript:;" deviceid='客厅,窗帘' tousername='cn_gdsz_aitezhinengauto_s1a1b1u1f17r39n1_g' class="contralCurtain"><span><img src='http://webs.atsmartlife.com/smarthome/application/views/plugin/app/images/Disclosure.png'></span></a>
+                                                    <p class="scene_title">
+                                                        窗帘
+                                                    </p>
+                                                    <p class="gray">
+                                                        开窗
+                                                    </p>
+                                                </div>
+                                                <div class="scene_item_r_b">
+                                                    <div class="scene_item_r_b_l" style="padding-top:0px;">
+                                                        <div class="chuan_box" style="margin-right: 25px">
+                                                            <div class="chuan_contor">
+                                                                <div class="jindutiao">
+                                                                    <ul>
+                                                                        <li class="jindutiao_l">
+                                                                            <a href="javascript:;" value="关窗"></a>
+                                                                        </li>
+                                                                        <li class="jindutiao_l_a">
+                                                                            <a href="javascript:;" value="暂停"></a>
+                                                                        </li>
+                                                                        <li class="jindutiao_r">
+                                                                            <a href="javascript:;" value="开窗" class="on"></a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <div class="chuan_b">
+                                                                <span class="c_l">关窗</span> <span class="c_c">暂停</span> <span class="c_r">开窗</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="clear"></div>
+                                        </div>
+                                    </div>
+                                    <div class="clear"></div>
+                                    <div class="scene_item_nav">
+                                        <a href="javascript:;">新风系统 ( 1)</a>
+                                    </div>
+                                    <div class="hide_list">
+                                        <div class="scene_item">
+                                            <div class="scene_item_l">
+                                                <img src='http://webs.atsmartlife.com/smarthome/application/views/plugin/app/images/image_xinfeng.png'>
+                                            </div>
+                                            <div class="scene_item_r">
+                                                <div class="scene_item_r_t">
+                                                    <a href="javascript:;" deviceid='客厅,新风系统' tousername='cn_gdsz_aitezhinengauto_s1a1b1u1f17r39n1_g'><span><img src='http://webs.atsmartlife.com/smarthome/application/views/plugin/app/images/Disclosure.png'></span></a>
+                                                    <p class="scene_title">
+                                                        新风系统
+                                                    </p>
+                                                    <p class="gray">
+                                                        已开启
+                                                    </p>
+                                                </div>
+                                                <div class="scene_item_r_b">
+                                                    <div class="scene_item_r_b_l" style="padding-top:0px;">
+                                                        <div class="chuan_box">
+                                                            <div class="jindutiao">
+                                                                <ul>
+                                                                    <li class="jindutiao_l">
+                                                                        <a href="javascript:;"></a>
+                                                                    </li>
+                                                                    <li class="jindutiao_l_a">
+                                                                        <a href="javascript:;"></a>
+                                                                    </li>
+                                                                    <li class="jindutiao_r">
+                                                                        <a href="javascript:;"></a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="chuan_b">
+                                                                <span class="c_l">小风</span> <span class="c_c">中风</span> <span class="c_r">高风</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="scene_item_r_b_r xf_control">
+                                                        <a href="javascript:;" class="switch_on"></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="clear"></div>
+                                        </div>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="page-inner">
+                            <div class="no_devices_box">
+                                该房间没有设备
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="page-inner">
+                            <div class="no_devices_box">
+                                该房间没有设备
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="page-inner">
+                            <div class="tabs_box">
+                                <div class="scene_main">
+                                    <div class="scene_item" deviceid='客厅,开关2'>
+                                        <div class="scene_item_l">
+                                            <img src='http://webs.atsmartlife.com/smarthome/application/views/plugin/app/images/image_light.png'>
+                                        </div>
+                                        <div class="scene_item_r">
+                                            <div class="scene_item_r_t">
+                                                <p class="scene_title" roomname='客厅' tousername='cn_gdsz_aitezhinengauto_s1a1b1u1f17r39n1_g'>
+                                                    开关2
+                                                </p>
+                                                <p class="gray light_state">
+                                                    已关闭
+                                                </p>
+                                            </div>
+                                            <div class="scene_item_r_b">
+                                                <div class="kai_box light_control">
+                                                    <a href="javascript:;" class="switch_off"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="clear"></div>
+                                    </div>
+                                    <div class="scene_item" deviceid='客厅,开关'>
+                                        <div class="scene_item_l">
+                                            <img src='http://webs.atsmartlife.com/smarthome/application/views/plugin/app/images/image_light.png'>
+                                        </div>
+                                        <div class="scene_item_r">
+                                            <div class="scene_item_r_t">
+                                                <p class="scene_title" roomname='客厅' tousername='cn_gdsz_aitezhinengauto_s1a1b1u1f17r39n1_g'>
+                                                    开关
+                                                </p>
+                                                <p class="gray light_state">
+                                                    已开启
+                                                </p>
+                                            </div>
+                                            <div class="scene_item_r_b">
+                                                <div class="kai_box light_control">
+                                                    <a href="javascript:;" class="switch_on"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="clear"></div>
+                                    </div>
+                                    <div class="scene_item" deviceid='客厅,开关1'>
+                                        <div class="scene_item_l">
+                                            <img src='http://webs.atsmartlife.com/smarthome/application/views/plugin/app/images/image_light.png'>
+                                        </div>
+                                        <div class="scene_item_r">
+                                            <div class="scene_item_r_t">
+                                                <p class="scene_title" roomname='客厅' tousername='cn_gdsz_aitezhinengauto_s1a1b1u1f17r39n1_g'>
+                                                    开关1
+                                                </p>
+                                                <p class="gray light_state">
+                                                    已关闭
+                                                </p>
+                                            </div>
+                                            <div class="scene_item_r_b">
+                                                <div class="kai_box light_control">
+                                                    <a href="javascript:;" class="switch_off"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="clear"></div>
+                                    </div>
+                                    <div class="clear"></div>
+                                    <div class="scene_item" deviceid='客厅,窗帘'>
+                                        <div class="scene_item_l">
+                                            <img src='http://webs.atsmartlife.com/smarthome/application/views/plugin/app/images/image_curtain.png'>
+                                        </div>
+                                        <div class="scene_item_r">
+                                            <div class="scene_item_r_t">
+                                                <a href="javascript:;" deviceid='客厅,窗帘' tousername='cn_gdsz_aitezhinengauto_s1a1b1u1f17r39n1_g' class="contralCurtain"><span><img src='http://webs.atsmartlife.com/smarthome/application/views/plugin/app/images/Disclosure.png'></span></a>
+                                                <p class="scene_title">
+                                                    窗帘
+                                                </p>
+                                                <p class="gray">
+                                                    开窗
+                                                </p>
+                                            </div>
+                                            <div class="scene_item_r_b">
+                                                <div class="scene_item_r_b_l" style="padding-top:0px;">
+                                                    <div class="chuan_box" style="margin-right: 25px">
+                                                        <div class="chuan_contor">
+                                                            <div class="jindutiao">
+                                                                <ul>
+                                                                    <li class="jindutiao_l">
+                                                                        <a href="javascript:;" value="关窗"></a>
+                                                                    </li>
+                                                                    <li class="jindutiao_l_a">
+                                                                        <a href="javascript:;" value="暂停"></a>
+                                                                    </li>
+                                                                    <li class="jindutiao_r">
+                                                                        <a href="javascript:;" value="开窗" class="on"></a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="chuan_b">
+                                                            <span class="c_l">关窗</span> <span class="c_c">暂停</span> <span class="c_r">开窗</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="clear"></div>
+                                    </div>
+                                    <div class="clear"></div>
+                                    <div class="scene_item">
+                                        <div class="scene_item_l">
+                                            <img src='http://webs.atsmartlife.com/smarthome/application/views/plugin/app/images/image_xinfeng.png'>
+                                        </div>
+                                        <div class="scene_item_r">
+                                            <div class="scene_item_r_t">
+                                                <a href="javascript:;" deviceid='客厅,新风系统' tousername='cn_gdsz_aitezhinengauto_s1a1b1u1f17r39n1_g'><span><img src='http://webs.atsmartlife.com/smarthome/application/views/plugin/app/images/Disclosure.png'></span></a>
+                                                <p class="scene_title">
+                                                    新风系统
+                                                </p>
+                                                <p class="gray">
+                                                    已开启
+                                                </p>
+                                            </div>
+                                            <div class="scene_item_r_b">
+                                                <div class="scene_item_r_b_l" style="padding-top:0px;">
+                                                    <div class="chuan_box">
+                                                        <div class="jindutiao">
+                                                            <ul>
+                                                                <li class="jindutiao_l">
+                                                                    <a href="javascript:;"></a>
+                                                                </li>
+                                                                <li class="jindutiao_l_a">
+                                                                    <a href="javascript:;"></a>
+                                                                </li>
+                                                                <li class="jindutiao_r">
+                                                                    <a href="javascript:;"></a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="chuan_b">
+                                                            <span class="c_l">小风</span> <span class="c_c">中风</span> <span class="c_r">高风</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="scene_item_r_b_r xf_control">
+                                                    <a href="javascript:;" class="switch_on"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="clear"></div>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="page-inner">
+                            <div class="no_devices_box">
+                                该房间没有设备
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="page-inner">
+                            <div class="tabs_box">
+                                <div class="scene_main"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="page-inner">
+                            <div class="no_devices_box">
+                                该房间没有设备
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="page-inner">
+                            <div class="no_devices_box">
+                                该房间没有设备
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="he50"></div>
+        <div class="menu">
+            <ul>
+                <li>
+                    <a href='http://webs.atsmartlife.com/smarthome/index.php/Main' class="ative"><img src='http://webs.atsmartlife.com/smarthome/application/views/plugin/app/images/iconfont-zhineng_home.png'></a>
+                    <p>
+                        智能控制
+                    </p>
+                </li>
+                <li>
+                    <a href='http://webs.atsmartlife.com/smarthome/index.php/community'><img src='http://webs.atsmartlife.com/smarthome/application/views/plugin/app/images/icon_community_home.png'><span class="redspan" id="community_badger"></span></a>
+                    <p>
+                        社区服务
+                    </p>
+                </li>
+                <li>
+                    <a href='http://webs.atsmartlife.com/smarthome/index.php/Main/user'><img src='http://webs.atsmartlife.com/smarthome/application/views/plugin/app/images/icon_profile_home.png'> <span id="user_badger"></span></a>
+                    <p>
+                        个人中心
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <div style="display: none;" class="animated zoomOut" id="HBox">
+            <div class="bangd_title">
+                密码设置
+            </div>
+            <div style="width: 100%; height: 100%; overflow: hidden; cursor: default;" id="gesturepwd"></div>
+        </div><script type="text/javascript">
+var scripts = [
+            getRootPath() + '/application/views/plugin/app/js/getmsg.js',
+            getRootPath() + '/application/views/plugin/app/js/zepto.js',
+            getRootPath() + '/application/views/plugin/app/js/tabslider.js',
+            getRootPath() + '/application/views/plugin/app/js/swiper.min.js',
+            getRootPath() + '/application/views/plugin/app/js/idangerous.swiper.scrollbar-2.0.js',
+            getRootPath() + '/application/views/plugin/app/js/CryptoJSv3.1.2/rollups/aes.js',
+            getRootPath() + '/application/views/plugin/app/js/CryptoJSv3.1.2/components/mode-ecb.js',
+            getRootPath() + '/application/views/plugin/app/js/CryptoJSv3.1.2/components/pad-zeropadding.js',
+            getRootPath() + '/application/views/plugin/app/js/jquery.gesture.password.js',
+            getRootPath() + '/application/views/plugin/app/js/hDialog.js',
+            getRootPath() + '/application/views/plugin/app/js/index.js'
+
+        ];
+
+        //获取安防状态
+        function queryMode(){
+            var url = getRootPath()+"/index.php/Main/getsecurity";
+            $.ajaxUtil(url,"get","",function(result){
+                $.console.log(result);
+            },function(error){
+                $.console.log(error);
+            });
+        }
+
+        function callback() {
+            $('.redspan').show();
+            $('.redspan2').show();
+            //setTimeout(getMsg,1000);
+            window.localStorage["test"] = $('#test').attr('text');
+            //var test=$('#test').attr('debug');
+            window.localStorage["debug"] = $('#test').attr('debug');
+            window.localStorage["first"] = $('#test').attr('first');
+
+
+
+            function saveId(obj,contral,device){
+                window.localStorage.deviceId =  $(obj).attr('deviceid');
+                window.localStorage.tousername = $(obj).attr('tousername');
+                window.localStorage.device= device;
+                $.console.log( window.localStorage.deviceId);
+                window.location.href= getRootPath() + '/index.php/Device/'+contral;
+                $.console.log(getRootPath() + '/index.php/Device/'+contral);
+
+            }
+
+            $('.contralAir').on('click',function(){
+                saveId(this,'air');
+            });
+
+            $('.contralAirDvb').on('click',function(){
+                saveId(this,'tvBox');
+            });
+
+            $('.contralCurtain').on('click',function(){
+                var id  =  $(this).attr('deviceid');
+                var status = $("div[deviceid='"+id+"']").find('.jindutiao .on').eq(0).attr('value');
+                window.localStorage.curtainStatus =status;
+                saveId(this,'curtain');
+            });
+
+            $('.contraltv').on('click',function(){
+                saveId(this,'television');
+            });
+
+
+            $('.contralDVD').on('click',function(){
+                saveId(this,'dvd');
+            });
+
+            $('.amplifier').on('click',function(){
+                saveId(this,'amplifier');
+            });
+
+            $('.contralLight').on('click',function(){
+                saveId(this,'light', $.pwdUtil.encBase64($(this).attr('device')));
+
+            });
+
+
+            var swiper = new Swiper('#swiper_ss', {
+                pagination: '.swiper-pagination',
+                slidesPerView: 4,
+                paginationClickable: true,
+                spaceBetween: 5,
+                freeMode: true
+            });
+
+
+
+            //Init Pages
+            var pages = $('.swiper-pages').swiper({
+
+                autoHeight: true,
+                onSlideChangeStart: function () {
+                    $(".swiper-nav .active").removeClass('active');
+                    $(".swiper-nav .swiper-slide").eq(pages.activeIndex).addClass('active');
+                    //$('.hide_list').show();
+                }
+            });
+
+
+            //Init Navigation
+            var nav = $('.swiper-nav').swiper({
+                slidesPerView: '6',
+                freeMode: true,
+                noSwiping: true,
+                freeModeFluid: true,
+                calculateHeight: true,
+                visibilityFullFit: true,
+                onClick: function (nav) {
+                    pages.slideTo(nav.clickedIndex, 200, false);
+                    $(".swiper-nav .swiper-slide").eq(pages.activeIndex).addClass('active').siblings().removeClass('active');
+                }
+            });
+
+            //Function to Fix Pages Height
+            var mySwiper = new Swiper('#banner', {
+                loop: true,
+                autoplay: 5000,
+                calculateHeight: true,
+                pagination: '.pagination'
+
+                //其他设置
+            });
+
+            //Scroll Containers
+            $('.scroll-container').each(function () {
+                $(this).swiper({
+
+                    mode: 'vertical',
+                    scrollContainer: true,
+                    mousewheelControl: true,
+                    scrollbar: {
+                        container: $(this).find('.swiper-scrollbar')[0]
+                    }
+                })
+            })
+
+            //Gallery
+            var swiperGallery = $('.swiper-gallery').swiper({
+                mode: 'vertical',
+                slidesPerView: 'auto',
+                freeMode: true,
+                freeModeFluid: true,
+                scrollbar: {
+                    container: $('.swiper-gallery .swiper-scrollbar')[0]
+                }
+            });
+
+
+            queryMode();
+
+             getMsg();
+        }
+
+
+
+        $.loadUtil(scripts, callback);
+
+        </script>
+    </body>
+</html>

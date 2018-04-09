@@ -1,0 +1,4 @@
+requests==2.18.4
+M2Crypto==0.29.0
+PyInstaller==3.3.1
+PyQt4==4.11.4
